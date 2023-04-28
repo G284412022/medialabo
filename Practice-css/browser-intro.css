@@ -1,0 +1,41 @@
+p {
+	color: navy;
+	font-weight: bold;
+	
+}
+
+p.info {
+	font-size: 10pt;
+	background-color: #dfdfdf;
+}
+
+h1 {
+	color:white;
+	text-shadow: navy 1px 0 10px;
+
+}
+
+h2 {
+	font-family: cursive;
+	color: #3f3faf;
+	margin: 5px;
+	background: linear-gradient(to left, #ffefaf, white);
+}
+
+div#zentai {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 200px 200px;
+	grid-gap:10px;
+	flex-direction: row;
+	width: 1024px;
+}
+
+div#zentai > div {
+	padding-left: 5px;
+	background-color: #ffefaf;
+}
+
+img{
+    float: right;
+}
