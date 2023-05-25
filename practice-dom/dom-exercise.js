@@ -24,12 +24,15 @@ h2.insertAdjacentElement('afterend', p);
 // 練習4-3 写真表作成プログラム
 p = document.createElement('p');
 f1=taro.png;
-name="拓殖太郎";
+="拓殖太郎";
 f2=jiro.png;
 f3=hanako.png;
 img = document.createElement('img');
 // 練習4-4 箇条書き削除プログラム
-
+let w = document.querySelectorAll('ul#location>li');
+for(n of w){
+	n.remove();
+}
 
 // 練習4-5 箇条書き追加プログラム
 
