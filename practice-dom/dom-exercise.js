@@ -22,12 +22,18 @@ h2.insertAdjacentElement('afterend', p);
 //h2.insertAdjacentElement('afterend', p);
 
 // 練習4-3 写真表作成プログラム
-p = document.createElement('p');
-f1=taro.png;
-="拓殖太郎";
-f2=jiro.png;
-f3=hanako.png;
-img = document.createElement('img');
+photo=[
+	{face:taro.png},{face:jiro.png},{face:hanako.png}
+]
+div=document.querySelector('div#phototable')
+for(photo of photo){
+	img = document.createElement('img');
+	img.setAttribute('src',photo.face);
+	p=document.createElement('p');
+	p.insertAdjacentElement('beforeend',img);
+	div.insertAdjacentElement('beforeed',p);
+}
+
 // 練習4-4 箇条書き削除プログラム
 let w = document.querySelectorAll('ul#location>li');
 for(n of w){
