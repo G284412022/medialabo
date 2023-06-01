@@ -41,4 +41,9 @@ for(n of w){
 }
 
 // 練習4-5 箇条書き追加プログラム
-
+l=document.querySelector('ul#location');
+for(z of data){
+	r=document.createElement('li');
+	r.textContent=z.name+'...緯度:'+z.lat+',経度:'+z.lng;
+	l.insertAdjacentElement('beforeend',r);
+}
