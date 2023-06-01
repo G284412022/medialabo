@@ -21,8 +21,10 @@ function hantei() {
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
-  if(){
-    
+  if(yoso==kotae){
+    console.log("正解");
+  }else{
+    console.log("不正解");
   }
 }
 

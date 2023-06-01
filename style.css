@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(8, 0, 255);
+    background-color: rgb(0, 217, 255);
 }
 h1 {
     color:black;
@@ -8,7 +8,7 @@ h1.info {
 	font-size: 10pt;
 }
 h3{
-    color:rgb(238, 255, 0);
+    color:rgb(255, 255, 255);
     background-color:  #000000;
 }
 a:link{
