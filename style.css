@@ -1,16 +1,14 @@
 body{
-    background-color: rgb(255, 128, 0);
+    background-color: rgb(8, 0, 255);
 }
 h1 {
     color:black;
-    background-color: aqua;
-
 }
 h1.info {
 	font-size: 10pt;
 }
 h3{
-    color:aliceblue;
+    color:rgb(238, 255, 0);
     background-color:  #000000;
 }
 a:link{
