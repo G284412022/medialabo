@@ -23,7 +23,7 @@ h2.insertAdjacentElement('afterend', p);
 
 // 練習4-3 写真表作成プログラム
 photo=[
-	{face:taro.png},{face:jiro.png},{face:hanako.png}
+	{face:"taro.png"},{face:"jiro.png"},{face:"hanako.png"}
 ]
 div=document.querySelector('div#phototable')
 for(photo of photo){
