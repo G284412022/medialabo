@@ -1,5 +1,5 @@
 body{
-    background-color: aqua;
+    background-color: rgb(255, 128, 0);
 }
 h1 {
     color:black;
@@ -11,8 +11,8 @@ h1.info {
 }
 h3{
     color:aliceblue;
-    background-color:  #3151a8;
+    background-color:  #000000;
 }
 a:link{
-    color:rgb(204, 255, 0);
+    color:rgb(238, 255, 0);
 }
