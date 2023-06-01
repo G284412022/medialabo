@@ -1,3 +1,6 @@
+body{
+    background-color: aqua;
+}
 h1 {
     color:black;
     background-color: aqua;
@@ -11,5 +14,5 @@ h3{
     background-color:  #3151a8;
 }
 a:link{
-    color:aquamarine;
+    color:rgb(204, 255, 0);
 }
