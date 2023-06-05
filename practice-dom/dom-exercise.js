@@ -14,25 +14,33 @@ let data = [
 //// 注意: 以上は編集しないこと!
 
 // 練習4-2 メッセージ追加プログラム
-h2 = document.querySelector('h2#ex42'); 
-p = document.createElement('p');
-p.textContent = '写真と都市の緯度経度のページです。';
-p.style.textEmphasis='sesame green';
-h2.insertAdjacentElement('afterend', p);
+let h2 = document.querySelector('h2#ex42'); 
+let p1 = document.createElement('p');
+p1.textContent = '写真と都市の緯度経度のページです。';
+p1.style.textEmphasis='sesame green';
+h2.insertAdjacentElement('afterend', p1);
 //h2.insertAdjacentElement('afterend', p);
 
 // 練習4-3 写真表作成プログラム
-photo=[
-	{face:"taro.png"},{face:"jiro.png"},{face:"hanako.png"}
-]
-div=document.querySelector('div#phototable')
-for(photo of photo){
-	img = document.createElement('img');
-	img.setAttribute('src',photo.face);
-	p=document.createElement('p');
-	p.insertAdjacentElement('beforeend',img);
-	div.insertAdjacentElement('beforeed',p);
-}
+
+let div=document.querySelector('div#phototable');
+let p2=document.createElement('p');
+let img1=document.createElement('img');
+img1.setAttribute('src',"taro.png");
+p2.insertAdjacentElement('beforeend',img1);
+div.insertAdjacentElement('beforeend',p2);
+
+let p3=document.createElement('p');
+p2.insertAdjacentElement('beforeend',p3);
+let img2=document.createElement('img');
+p3.insertAdjacentElement('beforeend',img2);
+img2.setAttribute('src',"jiro.png");
+
+let p4=document.createElement('p');
+p3.insertAdjacentElement('beforeend',p4);
+let img3=document.createElement('img');
+p4.insertAdjacentElement('beforeend',img3);
+img3.setAttribute('src',"hanako.png");
 
 // 練習4-4 箇条書き削除プログラム
 let w = document.querySelectorAll('ul#location>li');
