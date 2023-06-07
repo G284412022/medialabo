@@ -48,8 +48,7 @@ let data = {
   ////////// 課題3-2 ここからプログラムを書こう
   
 
-p=document.createElement('P');
-p.textContent=data.nemu+","+data.main.temp_max+","+data.main.temp_min;
+
 
 let b = document.querySelector('button#kensaku');
 b.addEventListener('click', kensaku);
