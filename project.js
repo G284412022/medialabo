@@ -51,12 +51,37 @@ cosole.log(data.name+","+data.main.temp_max+","+data.main.temp_min);
 p=document.createElement('P');
 p.textContent=data.nemu+","+data.main.temp_max+","+data.main.temp_min;
 
-let b = document.querySelector('#print');
-b.addEventListener('click', greeting);
-
+let b = document.querySelector('button#kensaku');
+b.addEventListener('click', kensaku);
+let greeting=document.querySelector('div#greeting');
 // 2. イベントハンドラの定義
-function greeting() {
-    let i = document.querySelector('input[name="shimei"]');
-    let shimei = i.value;       // ユーザが記入した文字列
-    console.log('こんにちは! ' + shimei + ' さん');
+function kensaku() {
+    let i = document.querySelector('input[name="kuni"]');
+    let kuni = i.value;       // ユーザが記入した文字列
+    console.log('kuni');
+    let url ='';
+    // 通信開始
+    axios.get(url)
+        .then(showResult)   // 通信成功
+        .catch(showError)   // 通信失敗
+        .then(finish);      // 通信の最後の処理
+}
+// 通信が成功した時の処理
+function showResult(resp) {
+    let data = resp.data;
+    if (typeof data === 'string') {
+        data = JSON.parse(data);
+    }
+    // data をコンソールに出力
+    console.log(data);
+
+}
+// 通信エラーが発生した時の処理
+function showError(err) {
+    console.log(err);
+}
+
+// 通信の最後にいつも実行する処理
+function finish() {
+    console.log('終了');
 }
