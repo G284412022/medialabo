@@ -74,6 +74,25 @@ function showResult(resp) {
     }
     // data をコンソールに出力
     console.log(data);
+    let to=document.querySelector('span#tosi');
+    to.textContent=data.name;
+    let wea=document.querySelector('span#weather');
+    wea.textContent=data.weather[0].description;
+    let max=document.querySelector('span#max');
+    max.textContent=data.main.temp_max;
+    let min=document.querySelector('span#weather');
+    wea.textContent=data.main.temp_min;
+    let hum=document.querySelector('span#weather');
+    hum.textContent=data.main.humidity;
+    let lon=document.querySelector('span#weather');
+    lon.textContent=data.coord.lon;
+    let lat=document.querySelector('span#weather');
+    lat.textContent=data.coord.lat;
+    let spe=document.querySelector('span#weather');
+    spe.textContent=data.wind.speed;
+    let deg=document.querySelector('span#weather');
+    deg.textContent=data.wind.deg;
+    
 
 }
 // 通信エラーが発生した時の処理
