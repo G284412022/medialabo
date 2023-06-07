@@ -56,10 +56,10 @@ b.addEventListener('click', kensaku);
 let greeting=document.querySelector('div#greeting');
 // 2. イベントハンドラの定義
 function kensaku() {
-    let i = document.querySelector('input[name="kuni"]');
-    let kuni = i.value;       // ユーザが記入した文字列
-    console.log('kuni');
-    let url ='';
+    let i = document.querySelector('input[name="id"]');
+    let id = i.value;       // ユーザが記入した文字列
+    console.log(id);
+    let url ='https://www.nishita-lab.org/web-contents/jsons/openweather/{id}.json'+(id)+'json';
     // 通信開始
     axios.get(url)
         .then(showResult)   // 通信成功
