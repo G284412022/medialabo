@@ -13,7 +13,7 @@ h2{
     color:rgb(255, 255, 255);
     background-color:  #b8ffcb;
     background:linear-gradient(to right,#b8ffcb,rgb(253, 253, 253)) ;
-    text-shadow: rgb(68, 211, 255) 1px 0 10px;
+    text-shadow: rgb(68, 211, 255) 1px 2px 10px;
 }
 h3{
     color:rgb(255, 255, 255);
