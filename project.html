@@ -1,4 +1,4 @@
-<<html><head>
+<html><head>
   <meta charset="utf-8">
   <title>世界の天気</title>
   <link rel="stylesheet" href="project.css">
@@ -10,7 +10,7 @@
   <div id="label">
   <label for="kensaku">天気の検索メニュー</label>
   <select name="kensaku" id="kensaku">
-      <option value="">検索する都市を選んでください</option>
+      <option value="">検索する都市を選んでください(国)</option>
       <option value="360630">Cairo カイロ （エジプト）</option>
       <option value="524901">Moscow モスクワ （ロシア）</option>
       <option value="993800">Johannesburg ヨハネスブルク （南アフリカ）</option>
@@ -29,6 +29,22 @@
   <h2>検索する都市:<span id="name"></span></h2>
 <table>
   <tbody>
+     <tr>
+      <td>天気:</td>
+      <td><span id="weather"></span></td>
+     </tr>
+      <tr>
+            <td>最高気温:</td>
+            <td><span id="maxtemp"></span></td>
+      </tr>
+      <tr>
+          <td>最低気温:</td>
+          <td><span id="mintemp"></span></td>
+      </tr>
+      <tr>
+        <td>湿度:</td>
+        <td><span id="situdo"></span></td>
+      </tr>
       <tr>
           <td>緯度:</td>
           <td><span id="ido"></span></td>
@@ -36,22 +52,6 @@
       <tr>
           <td>経度:</td>
           <td><span id="keido"></span></td>
-      </tr>
-      <tr>
-          <td>天気:</td>
-          <td><span id="weather"></span></td>
-      </tr>
-      <tr>
-          <td>最低気温:</td>
-          <td><span id="mintemp"></span></td>
-      </tr>
-      <tr>
-          <td>最高気温:</td>
-          <td><span id="maxtemp"></span></td>
-      </tr>
-      <tr>
-          <td>湿度:</td>
-          <td><span id="situdo"></span></td>
       </tr>
       <tr>
           <td>風速:</td>
