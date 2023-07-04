@@ -13,10 +13,12 @@ h2{
     color:rgb(255, 255, 255);
     background-color:  #b8ffcb;
     background:linear-gradient(to right,#b8ffcb,rgb(253, 253, 253)) ;
+    text-shadow: rgb(68, 211, 255) 1px 0 10px;
 }
 h3{
     color:rgb(255, 255, 255);
-    background-color:  #000000;
+    background-color:  #ff90e5;
+    text-shadow: rgb(253, 218, 142) 1px 0 10px;
 }
 a:link{
     color:rgb(238, 255, 0);
